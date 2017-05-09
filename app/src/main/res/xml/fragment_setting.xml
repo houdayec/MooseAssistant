@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:title="Choose your color"
+        android:summary="Select your default color for the app"
+        android:key="storedColor"
+        android:defaultValue="1"
+        android:entries="@array/color_app"
+        android:entryValues="@array/listValues" />
+</PreferenceScreen>

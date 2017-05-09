@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="labs.hantiz.mooseproject.Events.EventsFragment"
+    android:id="@+id/events_fragment">
+
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2.8"
+        android:orientation="horizontal"
+        android:background="?colorPrimary"  >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/buttonStartDate"
+        android:text="Select start date"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="?colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="15sp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/buttonEndDate"
+        android:text="Select end date"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:background="?colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:id="@+id/buttonSearchEvent"
+            android:text="Search"
+            android:layout_alignParentRight="true"
+            android:layout_weight="0.8"
+            android:src="@drawable/ic_search_icon"
+            android:background="?colorPrimaryDark"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:paddingTop="10dp">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eventList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

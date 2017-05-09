@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Moose</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Strings for search part -->
+    <string name="nameTabSearch">Search an event</string>
+    <string name="nameTabEvents">TOP 10</string>
+
+    <string-array name="categories_information">
+        <item>HOAS</item>
+        <item>METROPOLIA</item>
+        <item>HELSINKI</item>
+    </string-array>
+
+    <string-array name="language_app">
+        <item>English</item>
+        <item>French</item>
+    </string-array>
+
+    <string-array name="color_app">
+        <item>Default</item>
+        <item>Modern</item>
+    </string-array>
+
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+</resources>
